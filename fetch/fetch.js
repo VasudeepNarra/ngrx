@@ -9,7 +9,7 @@ const mongodb = require("mongodb");
 const ashokIT = mongodb.MongoClient;
 
 const fetch = express.Router().get("/",(req,res)=>{
-    ashokIT.connect("mongodb+srv://admin:admin@cluster0.lmg5k.mongodb.net/<dbname>?retryWrites=true&w=majority",(err,conn)=>{
+    ashokIT.connect("mongodb+srv://admin:admin@cluster0.lmg5k.mongodb.net/angdb?retryWrites=true&w=majority",(err,conn)=>{
         if(err) throw err;
         else{
             let db = conn.db("angdb");
